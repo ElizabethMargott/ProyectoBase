@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="vh-100 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="text-center fs-2">Hello World!</h1>
+        {% extends "layout.html" %}
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Guardar</button>
+        </form>
+
+    </div>
+
+{% endblock %}
